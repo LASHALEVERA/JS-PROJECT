@@ -1,11 +1,37 @@
-body{background-color: antiquewhite !important}
- 
+*{margin: 7px;
+    padding: 3px;}
+
+body{background-color: rgba(245, 246, 245, 0.627) !important}
+header {
+    background-color: #009688;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #004d40;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #00796b;
+}
+
 section {display: flex;
     flex-direction:row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
-    background-color: rgb(241, 156, 38);
+    background-color: rgb(11, 11, 11);
+    border: 3px solid black;
 }
 
 div { margin: 13px;
@@ -14,3 +40,26 @@ div { margin: 13px;
     flex-wrap: wrap;
 }
 
+img {display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+}
+    
+p,.card{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+       
+h5{text-align: center;
+}
+
+footer {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
