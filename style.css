@@ -1,0 +1,16 @@
+body{background-color: antiquewhite !important}
+ 
+section {display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: rgb(241, 156, 38);
+}
+
+div { margin: 13px;
+    padding: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
