@@ -51,7 +51,17 @@ p,.card{display: flex;
     justify-content: center;
     align-items: center;
 }
-       
+
+.Cryptocurrency { border: 4px solid rgb(83, 19, 211);
+}
+.CRP {font-size: 18px;
+}
+
+.downgation {display: flex;
+justify-content: center;}
+.iconsContainer {display: flex;
+justify-content: center;}
+
 h5{text-align: center;
 }
 
@@ -62,4 +72,29 @@ footer {
     padding: 10px 0;
     bottom: 0;
     width: 100%;
+}
+
+
+@media screen and (max-width:680px) 
+{body{ background-color: black !important;}
+.navline{background-color: rgb(0, 113, 206);}
+.products {display: flex;
+flex-flow: wrap column;
+justify-content: center;
+align-items: center;
+}
+
+.downgation {flex-flow: wrap column;
+justify-content: space-between;
+margin: 20px;
+padding: 20px;}
+
+footer {background-color: rgb(1, 144, 8);}
+label {color: white;}
+.CRP{color: rgb(22, 15, 221);
+font-size: 17px;
+font-weight: bold;
+}
+
+
 }

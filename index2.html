@@ -20,43 +20,22 @@
     <a href="#">ფასდაკლებები</a>
 </nav>
 
-    <div class="search-group"> 
-        <label for="id1"> რას ეძებ ?  </label>
-        <input type="text" id="id1" class="form-control" placeholder="მოძებნე . . ." >
-
-        <label for="id2"> მინიმალური ფასი </label>
-        <input type="text" id="id2" class="form-control" placeholder="საიდან" >
-        
-        <label for="id3"> მაქსიმალური ფასი </label>
-        <input type="text" id="id3" class="form-control" placeholder="სადამდე">
-        <button class="btn btn-success mt-3">ძებნა</button>
-    </div>
-
 <section>
-
+    <div class="card" style="width: 25rem;">
+        <h2>Product Details</h2>
+        <h3>${item.brand}</h3>
+        <h5>${item.price.current}</h5>
+        <img src="${item.images}" class="img" alt="photo">
+        <p class="rate">${item.description}</p>
+        <a href="./index2.html" class="btn btn-primary">დეტალურად</a>
+        </div>
 </section>
-
-<div class="Cryptocurrency"> 
-<h5>Crypto Prices</h5>
-    <div class="CRP" id="BTC-price"></div>
-    <div class="CRP" id="ETH-price"></div>
-    <div class="CRP" id="XRP-price"></div>
-    <div class="CRP" id="SOL-price"></div>
-    <div class="CRP" id="FIL-price"></div>
-    <div class="CRP" id="MATIC-price"></div>
-</div>
 
   <div class="downgation">
       <ul>
-          <li>
-              <a href="#s1">Shop</a>
-          </li>
-          <li>
-              <a href="#s1">Contact</a>
-          </li>
-          <li>
-              <a href="https://bankofgeorgiagroup.com/">Payment Methods</a>
-          </li>
+        <a href="#s1">Shop</a>
+        <a href="#s1">Contact</a>
+        <a href="https://bankofgeorgiagroup.com/">Payment Methods</a>  
       </ul>
   </div>
 
@@ -80,6 +59,6 @@
   <p> All Rights Reserved.</p>
 </footer>
 
-<script src="./main.js"></script>
+<script src="./index2.js"></script>
 </body>
 </html>

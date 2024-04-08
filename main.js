@@ -3,7 +3,7 @@ let input1 = document.querySelector("#id1");
 let input2 = document.querySelector("#id2");
 let input3 = document.querySelector("#id3");
 let section = document.querySelector("section");
- let apiUrl = `https://api.everrest.educata.dev/shop/products/all/`;
+let apiUrl = `https://api.everrest.educata.dev/shop/products/all/`;
 // let apiUrl = `https://api.everrest.educata.dev/shop/products/search?page_index=1&page_size=50&sort_by=price&sort_direction=asc`;
 
 search.addEventListener("click", function() {
@@ -25,21 +25,20 @@ section.innerHTML += `
 <div class="card" style="width: 25rem;">
 <h3>${item.brand}</h3>
 <h5>${item.price.current}</h5>
-<img src="${item.category.image}" class="img" alt="photo">
 <img src="${item.images}" class="img" alt="photo">
 <p class="rate">${item.description}</p>
-
+<a href="./index2.html" class="btn btn-primary">დეტალურად</a>
 </div>
-
 `
 }
 })
 }
 })
 
+// <img src="${item.category.image}" class="img" alt="photo">
 
 function fetchPrices() {
-const symbols = ['BTC', 'ETH', 'XRP', 'XLM', 'FIL', 'MATIC', 'SOL'];
+const symbols = ['BTC', 'ETH', 'XRP', 'FIL', 'MATIC', 'SOL'];
 
 symbols.forEach(symbol => {
 fetch(`https://api.coinbase.com/v2/prices/${symbol}-USD/spot`)
@@ -53,4 +52,4 @@ console.error('Error fetching price:', error);
 });
 }
 window.onload = fetchPrices;
-setInterval(fetchPrices, 10000);
+setInterval(fetchPrices, 3000);
