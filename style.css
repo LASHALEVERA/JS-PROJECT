@@ -74,6 +74,9 @@ footer {
     width: 100%;
 }
 
+.discounted {text-decoration: line-through;
+color: red;
+}
 
 @media screen and (max-width:680px) 
 {body{ background-color: black !important;}

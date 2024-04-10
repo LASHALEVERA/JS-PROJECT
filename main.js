@@ -3,8 +3,8 @@ let input1 = document.querySelector("#id1");
 let input2 = document.querySelector("#id2");
 let input3 = document.querySelector("#id3");
 let section = document.querySelector("section");
-let apiUrl = `https://api.everrest.educata.dev/shop/products/all/`;
-// let apiUrl = `https://api.everrest.educata.dev/shop/products/search?page_index=1&page_size=50&sort_by=price&sort_direction=asc`;
+// let apiUrl = `https://api.everrest.educata.dev/shop/products/all/`;
+let apiUrl = `https://api.everrest.educata.dev/shop/products/search?page_index=1&page_size=50&sort_by=price&sort_direction=asc`;
 
 search.addEventListener("click", function() {
 //  let inputvalue = input1.value.toLowerCase();
@@ -18,15 +18,22 @@ function htmlRenderer(itemList) {
 console.log(itemList)
 
 section.innerHTML = ""
+if (input2.value==""){
+    input2.value = 0; input2.style.color="white"
+}
+
+if (input3.value==""){
+    input3.value = 99999; input3.style.color="white";
+}
 
 itemList.forEach(item => {
 if (item.price.current >= input2.value && item.price.current <= input3.value && item.title.toLowerCase().includes(input1.value.toLowerCase())) {
 section.innerHTML += `
 <div class="card" style="width: 25rem;">
-<h3>${item.brand}</h3>
+<h2 class="title">${item.title}</h2>
+<h4 class=discounted>${item.price.beforeDiscount} </h4>
 <h5>${item.price.current}</h5>
 <img src="${item.images}" class="img" alt="photo">
-<p class="rate">${item.description}</p>
 <a href="./index2.html" class="btn btn-primary">დეტალურად</a>
 </div>
 `
@@ -36,6 +43,8 @@ section.innerHTML += `
 })
 
 // <img src="${item.category.image}" class="img" alt="photo">
+{/* <h3>${item.brand}</h3> */}
+//<p class="rate">${item.description}</p>
 
 function fetchPrices() {
 const symbols = ['BTC', 'ETH', 'XRP', 'FIL', 'MATIC', 'SOL'];

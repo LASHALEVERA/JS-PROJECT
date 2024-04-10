@@ -22,13 +22,12 @@
 
 <section>
     <div class="card" style="width: 25rem;">
-        <h2>Product Details</h2>
-        <h3>${item.brand}</h3>
-        <h5>${item.price.current}</h5>
-        <img src="${item.images}" class="img" alt="photo">
-        <p class="rate">${item.description}</p>
-        <a href="./index2.html" class="btn btn-primary">დეტალურად</a>
-        </div>
+      <h2 class="title">${item.title}</h2>
+      <h4 class=discounted>${item.price.beforeDiscount} </h4>
+      <h5> ${item.price.current}</h5>
+      <img src="${item.images}" class="img" alt="photo">
+      <p class="rate">${item.description}</p>
+      </div>
 </section>
 
   <div class="downgation">
