@@ -14,18 +14,19 @@
     <h1> WELCOME TO THE GREEN TECH WEB</h1>
 </header>
 <nav>
-    <a href="./index.html" id="s1">საწყისი გვერდი</a>
-    <a href="#">კონტაქტი</a>
-    <a href="#">ასისტენტი</a>
-    <a href="#">ფასდაკლებები</a>
+  <a href="./index.html" id="s1">საწყისი გვერდი</a>
+  <a href="./Contact.html">კონტაქტი</a>
+  <a href="./Assistant.html">ასისტენტი</a>
+  <a href="./Sales.html">ფასდაკლებები</a>
 </nav>
 
 <section>
     <div class="card" style="width: 25rem;">
-      <h2 class="title">${item.title}</h2>
+      <img src="${item.images}" class="img" alt="photo">
+      <h5 class="title">${item.brand}</h5>
+      <h3 class="title">${item.title}</h3>
       <h4 class=discounted>${item.price.beforeDiscount} </h4>
       <h5> ${item.price.current}</h5>
-      <img src="${item.images}" class="img" alt="photo">
       <p class="rate">${item.description}</p>
       </div>
 </section>

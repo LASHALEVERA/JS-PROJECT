@@ -50,6 +50,7 @@ img {display: flex;
 p,.card{display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .Cryptocurrency { border: 4px solid rgb(83, 19, 211);
@@ -58,7 +59,13 @@ p,.card{display: flex;
 }
 
 .downgation {display: flex;
-justify-content: center;}
+justify-content: center;
+}
+.downgation ul li{
+    list-style: none;
+}
+
+
 .iconsContainer {display: flex;
 justify-content: center;}
 
@@ -77,6 +84,11 @@ footer {
 .discounted {text-decoration: line-through;
 color: red;
 }
+
+.maps {display: flex;
+    justify-content: center;
+}
+.BTC {background-color: gold;}
 
 @media screen and (max-width:680px) 
 {body{ background-color: black !important;}
